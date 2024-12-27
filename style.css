@@ -1,31 +1,71 @@
-/* General reset for body, remove default margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Apply matte black background to the body */
+body {
+  background-color: #1a1a1a; /* Dark matte black background */
+  color: #e0e0e0; /* Light grey text for contrast */
+  font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-/* Make the page full height */
-html, body {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
+/* General styling for headings */
+h1, h2, h3 {
+  color: #f1f1f1; /* Slightly lighter color for headings */
+  text-align: center;
+  margin: 20px 0;
 }
 
-/* Container to center content vertically and horizontally */
+/* Style for paragraphs */
+p {
+  color: #d3d3d3; /* Light grey for paragraph text */
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: center; /* Center-align text */
+  margin: 20px;
+}
+
+/* Style links with a subtle color */
+a {
+  color: #4caf50; /* Soft green color for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #81c784; /* Lighter green on hover */
+}
+
+/* Navigation or header section */
+header {
+  background-color: #333; /* Dark grey header for contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* Style for the footer */
+footer {
+  background-color: #222; /* Even darker footer */
+  padding: 20px;
+  text-align: center;
+  color: #bbb; /* Lighter grey text for footer */
+}
+
+/* Optional: Add some box shadow to cards or containers */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: #2c3e50; /* Sleek dark background */
-    color: white;
-}
-
-/* Style the h1 text */
-h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  margin: 20px auto;
+  width: 80%;
+  max-width: 900px;
 }
